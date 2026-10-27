@@ -1,0 +1,45 @@
+@layer components {
+  .nx-btn {
+    --_bg: var(--nx-surface-2); --_fg: var(--nx-text);
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--nx-space-xs);
+    min-height: var(--nx-touch-target); padding: 0 var(--nx-space-md);
+    border-radius: var(--nx-radius-pill); background: var(--_bg); color: var(--_fg);
+    font-size: var(--nx-text-sm); font-weight: 600; text-decoration: none;
+    transition: transform var(--nx-duration-fast) var(--nx-ease), box-shadow var(--nx-duration-normal) var(--nx-ease);
+  }
+  .nx-btn:hover { transform: translateY(-1px); box-shadow: var(--nx-shadow-sm); }
+  .nx-btn:active { transform: translateY(0); }
+  .nx-btn:disabled { opacity: .5; pointer-events: none; }
+  .nx-btn--primary { --_bg: var(--nx-primary); --_fg: var(--nx-primary-contrast); }
+  .nx-btn--ghost { --_bg: transparent; border: 1px solid var(--nx-border); }
+  .nx-btn--danger { --_bg: var(--nx-danger); --_fg: white; }
+
+  .nx-card {
+    background: var(--nx-surface); border: 1px solid var(--nx-border);
+    border-radius: var(--nx-radius-lg); padding: var(--nx-space-md);
+    box-shadow: var(--nx-shadow-xs);
+    transition: box-shadow var(--nx-duration-normal) var(--nx-ease), transform var(--nx-duration-normal) var(--nx-ease);
+  }
+  .nx-card:hover { box-shadow: var(--nx-shadow-md); transform: translateY(-2px); }
+
+  .nx-input {
+    width: 100%; min-height: var(--nx-touch-target); padding: 0 var(--nx-space-sm);
+    border-radius: var(--nx-radius-sm); border: 1px solid var(--nx-border);
+    background: var(--nx-surface); color: var(--nx-text); font-size: var(--nx-text-md);
+  }
+  .nx-input:focus { outline: none; border-color: var(--nx-primary); box-shadow: 0 0 0 3px color-mix(in oklch, var(--nx-primary) 30%, transparent); }
+
+  .nx-badge {
+    display: inline-flex; align-items: center; gap: var(--nx-space-3xs);
+    padding: var(--nx-space-3xs) var(--nx-space-xs);
+    border-radius: var(--nx-radius-pill); font-size: var(--nx-text-xs); font-weight: 600;
+    background: color-mix(in oklch, var(--nx-primary) 15%, transparent); color: var(--nx-primary);
+  }
+
+  .nx-avatar {
+    --_size: 2.5rem; width: var(--_size); height: var(--_size);
+    border-radius: var(--nx-radius-circle); overflow: hidden;
+    display: inline-grid; place-items: center; background: var(--nx-surface-2); font-weight: 600;
+  }
+  .nx-avatar img { width: 100%; height: 100%; object-fit: cover; }
+}

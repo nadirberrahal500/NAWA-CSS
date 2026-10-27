@@ -1,0 +1,12 @@
+{
+  "name": "nawa-css",
+  "version": "0.1.0",
+  "description": "Nawa — fluid, automatic, RTL-first CSS framework for 2026 UI.",
+  "style": "dist/nawa.css",
+  "files": ["dist","src"],
+  "scripts": {
+    "build": "lightningcss --bundle --minify --targets '>= 2022' src/nexa.css -o dist/nawa.min.css && lightningcss --bundle --targets '>= 2022' src/nexa.css -o dist/nawa.css"
+  },
+  "devDependencies": { "lightningcss-cli": "^1.25.0" },
+  "license": "MIT"
+}

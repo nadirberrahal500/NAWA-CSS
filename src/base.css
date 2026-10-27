@@ -1,0 +1,18 @@
+@layer base {
+  html { font-family: var(--nx-font-sans); }
+  body { background: var(--nx-bg); color: var(--nx-text); font-size: var(--nx-text-md); }
+  h1 { font-size: var(--nx-text-3xl); line-height: var(--nx-leading-tight); letter-spacing: -0.02em; font-weight: 700; }
+  h2 { font-size: var(--nx-text-2xl); line-height: var(--nx-leading-tight); letter-spacing: -0.015em; font-weight: 700; }
+  h3 { font-size: var(--nx-text-xl);  line-height: var(--nx-leading-tight); font-weight: 600; }
+  h4 { font-size: var(--nx-text-lg);  font-weight: 600; }
+  small { font-size: var(--nx-text-sm); color: var(--nx-text-muted); }
+  code,pre { font-family: var(--nx-font-mono); font-size: 0.9em; }
+  ::selection { background: var(--nx-primary); color: var(--nx-primary-contrast); }
+  .nx-icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 1.25em; line-height: 1; display: inline-block;
+    vertical-align: -0.15em; direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}

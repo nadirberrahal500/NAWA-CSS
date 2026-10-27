@@ -1,0 +1,60 @@
+@layer tokens {
+  :root {
+    --nx-space-3xs: clamp(0.125rem, 0.1rem + 0.1vw, 0.25rem);
+    --nx-space-xs:  clamp(0.5rem, 0.45rem + 0.2vw, 0.625rem);
+    --nx-space-sm:  clamp(0.75rem, 0.65rem + 0.3vw, 1rem);
+    --nx-space-md:  clamp(1rem, 0.85rem + 0.5vw, 1.5rem);
+    --nx-space-lg:  clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+    --nx-space-xl:  clamp(2rem, 1.5rem + 2vw, 4rem);
+
+    --nx-font-sans: "Inter","Noto Sans Arabic",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --nx-font-mono: ui-monospace,"SF Mono",Menlo,monospace;
+    --nx-text-xs:  clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+    --nx-text-sm:  clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);
+    --nx-text-md:  clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+    --nx-text-lg:  clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
+    --nx-text-xl:  clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+    --nx-text-2xl: clamp(1.75rem, 1.5rem + 1.5vw, 2.5rem);
+    --nx-text-3xl: clamp(2.25rem, 1.8rem + 2.5vw, 3.5rem);
+
+    --nx-leading-tight: 1.2; --nx-leading-normal: 1.5;
+
+    --nx-radius-sm: 0.5rem; --nx-radius-md: 0.75rem; --nx-radius-lg: 1rem;
+    --nx-radius-xl: 1.25rem; --nx-radius-pill: 999px; --nx-radius-circle: 50%;
+
+    --nx-bg: oklch(99% 0.005 250);
+    --nx-surface: oklch(100% 0 0);
+    --nx-surface-2: oklch(97% 0.008 250);
+    --nx-text: oklch(20% 0.02 250);
+    --nx-text-muted: oklch(50% 0.02 250);
+    --nx-border: oklch(90% 0.01 250);
+    --nx-primary: oklch(60% 0.18 250);
+    --nx-primary-contrast: oklch(99% 0 0);
+    --nx-success: oklch(65% 0.16 150);
+    --nx-warning: oklch(75% 0.15 80);
+    --nx-danger:  oklch(60% 0.20 25);
+
+    --nx-shadow-xs: 0 1px 2px oklch(0% 0 0 / 0.06);
+    --nx-shadow-sm: 0 1px 3px oklch(0% 0 0 / 0.08), 0 1px 2px oklch(0% 0 0 / 0.04);
+    --nx-shadow-md: 0 4px 12px oklch(0% 0 0 / 0.08), 0 2px 4px oklch(0% 0 0 / 0.04);
+    --nx-shadow-lg: 0 10px 30px oklch(0% 0 0 / 0.10), 0 4px 8px oklch(0% 0 0 / 0.04);
+
+    --nx-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --nx-duration-fast: 120ms; --nx-duration-normal: 200ms;
+
+    --nx-touch-target: 2.75rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --nx-bg: oklch(15% 0.02 250);
+      --nx-surface: oklch(20% 0.02 250);
+      --nx-surface-2: oklch(24% 0.02 250);
+      --nx-text: oklch(96% 0.01 250);
+      --nx-text-muted: oklch(70% 0.02 250);
+      --nx-border: oklch(30% 0.02 250);
+      --nx-primary: oklch(72% 0.16 250);
+      --nx-primary-contrast: oklch(15% 0.02 250);
+      --nx-shadow-md: 0 4px 12px oklch(0% 0 0 / 0.5);
+    }
+  }
+}

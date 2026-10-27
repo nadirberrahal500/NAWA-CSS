@@ -1,0 +1,14 @@
+@layer utilities {
+  .nx-gap-xs { gap: var(--nx-space-xs); }
+  .nx-gap-sm { gap: var(--nx-space-sm); }
+  .nx-gap-md { gap: var(--nx-space-md); }
+  .nx-gap-lg { gap: var(--nx-space-lg); }
+  .nx-text-muted { color: var(--nx-text-muted); }
+  .nx-text-sm { font-size: var(--nx-text-sm); }
+  .nx-text-lg { font-size: var(--nx-text-lg); }
+  .nx-flex { display: flex; }
+  .nx-hidden { display: none !important; }
+  .nx-w-full { width: 100%; }
+  .nx-rounded { border-radius: var(--nx-radius-md); }
+  .nx-shadow-md { box-shadow: var(--nx-shadow-md); }
+}
